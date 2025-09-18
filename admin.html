@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — KinoProLab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main style="padding:18px; max-width:900px;margin:0 auto">
+    <h2>Admin panel</h2>
+    <div id="authBox" class="card">
+      <p>Parol bilan kirish</p>
+      <input id="adminPass" placeholder="Admin parol" />
+      <button id="authBtn" class="btn primary">Kirish</button>
+      <p class="muted">Parolni .html faylda o'zgartirish mumkin.</p>
+    </div>
+
+    <div id="panel" class="hidden">
+      <h3>Treyler qo'shish / tahrirlash</h3>
+      <div class="card">
+        <input id="tTitle" placeholder="Kino nomi" />
+        <input id="tVideo" placeholder="Video fayl yo'li yoki link (mp4)" />
+        <input id="tTG" placeholder="Telegram kanal linki" value="https://t.me/KinoProLab" />
+        <textarea id="tDesc" placeholder="Tavsif"></textarea>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button id="saveBtn" class="btn primary">Saqlash</button>
+          <button id="newBtn" class="btn">Yangi</button>
+          <button id="exportBtn" class="btn">Export JSON</button>
+          <button id="clearBtn" class="btn">Hammasini o'chirish</button>
+        </div>
+      </div>
+
+      <h3>Mavjud treylerlar</h3>
+      <div id="listArea"></div>
+      <p class="muted">Eslatma: bu panel localStorage bilan ishlaydi. Serverga saqlash uchun backend kerak bo‘ladi.</p>
+      <p class="muted">Admin parolni o'zgartirish uchun <code>admin.js</code> yoki bu faylni tahrirlash kifoya.</p>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
