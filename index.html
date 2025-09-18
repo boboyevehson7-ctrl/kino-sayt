@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KinoProLab — Treylerlar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="emailGate" class="overlay">
+    <div class="card">
+      <h2>Saytga kirish uchun email kiriting</h2>
+      <input id="emailInput" type="email" placeholder="email@mail.com" />
+      <button id="emailSubmit">Tasdiqlash</button>
+      <p class="muted">Haqiqiy tasdiqlash server bilan bo‘lganda ishlaydi. Hozircha email saqlanadi va panelga kirish imkoniyati beriladi.</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <h1>KinoProLab</h1>
+    <div class="searchWrap">
+      <input id="search" placeholder="Kino nomi qidir..." />
+      <button id="goAdmin" title="Admin panel">Admin</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="feed" class="feed"></section>
+  </main>
+
+  <!-- Modal for full info -->
+  <div id="modal" class="modal hidden">
+    <div class="modalInner">
+      <button id="closeModal" class="close">✕</button>
+      <div id="modalVideoWrap"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p><strong>Telegram kanal:</strong> <a id="modalTG" href="https://t.me/KinoProLab" target="_blank">KinoProLab</a></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
