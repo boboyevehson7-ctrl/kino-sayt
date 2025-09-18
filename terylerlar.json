@@ -1,0 +1,16 @@
+[
+  {
+    "id": "k1",
+    "title": "Namuna Kino 1",
+    "desc": "Bu kinoning qisqacha tavsifi. Treýler orqali to'liq ma'lumot va telegram kanalga yo'naltirish mavjud.",
+    "video": "samples/trailer1.mp4",
+    "tg": "https://t.me/KinoProLab"
+  },
+  {
+    "id": "k2",
+    "title": "Namuna Kino 2",
+    "desc": "Ikkinchi kino tavsifi. Qidiruv bilan topish mumkin.",
+    "video": "samples/trailer2.mp4",
+    "tg": "https://t.me/KinoProLab"
+  }
+]
